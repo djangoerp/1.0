@@ -1,0 +1,41 @@
+{% extends "master.html" %}
+{%block content%}
+<div class="row">
+            <div class="col-md-12">
+              <div class="grid simple">
+                <div class="grid-title no-border">
+
+                  <h4><a href="http://www.revox.io/icon/chevron-right"><i class="icon-chevron-right"></i></a>Usuário <span class="semi-bold">"{{user_id.username}}"</span></h4>
+                </div>
+                <div class="grid-body no-border"> <br>
+                  <div class="row">
+                    <div class="col-md-6">
+
+                      <div class="form-group">
+                        <label class="form-label">Primeiro Nome</label>
+                        <span class="help">Ex.: "João"</span>
+                        <div class="controls">
+                          <input type="text" class="form-control" value="{{user_id.first_name}}" disabled="disabled">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="form-label">Segundo Nome</label>
+                        <span class="help">Ex.: "da Silva"</span>
+                        <div class="controls">
+                          <input type="text" class="form-control" value="{{user_id.last_name}}" disabled="disabled">
+                        </div>
+                      </div>
+                       <div class="form-group">
+                        <label class="form-label">Usuário</label>
+                        <span class="help">Ex.: "joao_da_silva"</span>
+                        <div class="controls">
+                          <input type="text" class="form-control" value="{{user_id.username}}" disabled="disabled">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+{%endblock%}
